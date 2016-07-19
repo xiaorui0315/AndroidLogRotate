@@ -1,0 +1,2 @@
+# AndroidLogRotate
+LogRotate for Android
