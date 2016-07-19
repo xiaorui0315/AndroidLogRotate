@@ -84,11 +84,11 @@ static void log_once(FILE *where, int level, char *format, va_list args)
 void message(int level, char *format, ...)
 {
 	va_list args;
-	// if (level >= logLevel) {
+	if (level >= logLevel) {
 		va_start(args, format);
 		log_once(stderr, level, format, args);
 		va_end(args);
-	// }
+	}
     
 	if (messageFile != NULL) {
 		va_start(args, format);
